@@ -17,16 +17,22 @@
               margin-left: 13px;
               margin-top: 12px;
         }
+        #row {
+            display: inline-block;
+        }
     </style>
 </head>
 <body>
-    <div id="outer">
-        <div id="inner">
-
-        </div>
+    <div id="game">
     </div>
 </body>
 <script src="jquery.js"></script>
 <script>
+    var str = '<div id="outer"><div id="inner"></div></div>';
+
+
+    for(var i = 0; i < 7; i = i + 1) {
+        $('#game').append(str);
+    }
 </script>
 </html>
